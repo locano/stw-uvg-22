@@ -4,7 +4,11 @@
   "description": "stw-uvg-22",
   "main": "index.js",
   "dependencies": {},
-  "devDependencies": {},
+  "devDependencies": {
+    "@babel/core": "^7.16.7",
+    "@babel/preset-env": "^7.16.8",
+    "@babel/preset-react": "^7.16.7"
+  },
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
