@@ -3,7 +3,11 @@
   "version": "1.0.0",
   "description": "stw-uvg-22",
   "main": "index.js",
-  "dependencies": {},
+  "dependencies": {
+    "react": "^17.0.2",
+    "react-dom": "^17.0.2",
+    "react-router-dom": "^6.2.1"
+  },
   "devDependencies": {
     "@babel/core": "^7.16.7",
     "@babel/preset-env": "^7.16.8",
