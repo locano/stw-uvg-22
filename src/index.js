@@ -1,9 +1,10 @@
 import React from "react";
 import ReactDOM from "react-dom";
 import "./index.css";
+import StartApp from "./components/startApp";
 
 const StartComponent = () => {
   return <h1> New React APP</h1>;
 };
 
-ReactDOM.render(<StartComponent />, document.getElementById("root"));
+ReactDOM.render(<StartApp />, document.getElementById("root"));
