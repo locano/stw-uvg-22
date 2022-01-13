@@ -6,8 +6,8 @@
     flex-direction: column;
 }
 .profile-pic{
-    height: 350px;
-    width: 350px;
+    height: 300px;
+    width: 300px;
     background-color: white;
     background-image: url('/src/assets/img/lud.jpg');
     background-size: cover;
@@ -21,6 +21,8 @@
     border-radius: 2rem;
     flex-direction: column;
     background-color: white;
+    font-size: 16px;
+    color:#394867;
     box-shadow: 3px 3px #888888;
     width: 600px;
     height: 600px;

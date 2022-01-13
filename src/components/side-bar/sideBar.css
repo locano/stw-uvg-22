@@ -1,57 +1,73 @@
+.side-bar {
+  height: 100%;
+  width: 260px;
+  background-color: #14274e;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+.side-bar-min {
+  height: 100%;
+  width: 65px;
+  background-color: #14274e;
+}
 
-.side-bar{
-    height: 100%;
-    width: 275px;
-    background-color: #3b3a3c;
+.side-bar-content {
+  width: 100%;
 }
-.side-bar-min{
-    height: 100%;
-    width: 65px;
-    background-color: #3b3a3c;
+.side-bar-content .side-bar-action {
+  color: white;
+  font-size: 24px;
+  text-align: end;
 }
-.logo{
-    height: 150px;
-    width: 150px;
-    background-color: white;
-    background-image: url('/src/assets/img/logo.jpg');
-    background-position: center;
-    background-size: cover;
-    border-radius: 50%;
-    margin: 65px;
+.side-bar-action-close {
+  font-size: 24px;
+  cursor: pointer;
+  color: white;
+  text-align: center;
+  padding: 1rem;
+  cursor: pointer;
 }
-.side-bar-list{
-    padding: 0;
-    width: 100%;
-    text-align:center;
+.side-bar-content .side-bar-action .side-bar-action-icon {
+  padding: 1rem;
+  cursor: pointer;
 }
-.side-bar-list .side-bar-item{
-    color: white;
-    width: 100%;
-    height: 45px;
-    /* display: flex; */
-    /* flex-direction: row; */
-    font-size: 20px;
-    align-items: center;
-    justify-content: center;
+.side-bar-content .side-bar-logo {
+  height: 175px;
+  width: 175px;
+  background-image: url("/src/assets/img/logo.jpg");
+  background-position: center;
+  background-size: cover;
+  border-radius: 50%;
+  cursor: pointer;
+  margin-left: 1rem;
+}
+.side-bar-list {
+  padding: 0;
+  padding-top: 1rem;
+}
+.side-bar-list a.side-bar-item {
+ height: 36px;
+  margin-top: 1rem;
+  color: #9ba4b4;
+  display: flex;
+  font-size: 16px;
+  margin-bottom: 1rem;
+  border-bottom: 1px solid #394867;
+}
+.side-bar-list  #active {
+    background-color: #394867;
 }
 .side-bar-item #icon {
-    /* flex: 30%; */
+  flex: 30%;
+  font-size: 24px;
+  text-align: center;
 }
 .side-bar-item #title {
-    /* flex: 70%; */
-    color: white;
+  flex: 70%;
+  text-align: start;
 }
 .side-bar-item #title:hover {
-    color: #078B45;
-}
-.side-bar-x-1{
-    cursor: pointer;
-    color: white;
-    text-align: end;
-    margin-right: 30px;
-}
-.side-bar-x-2{
-    cursor: pointer;
-    color: white;
-    text-align: center;
+  color: #F1F6F9;
 }
