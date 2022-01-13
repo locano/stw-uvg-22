@@ -2,7 +2,6 @@ const path = require("path");
 const MiniCssExtractPlugin = require("mini-css-extract-plugin");
 const HtmlWebpackPlugin = require("html-webpack-plugin");
 
-
 module.exports = {
   entry: {
     index: "./src/index.js",
@@ -34,7 +33,7 @@ module.exports = {
         test: /\.js$/,
         loader: "babel-loader",
         exclude: /(node_modules)/,
-      },
+      }
     ],
   },
 };

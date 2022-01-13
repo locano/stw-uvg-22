@@ -2,23 +2,18 @@
 import React from "react";
 export const sideBarElements = [
   {
-    title: "Simple Components",
+    title: "Nginx Info",
+    icon: '',
+    route: "/nginx",
+  },
+  {
+    title: "Home",
     icon: '',
     route: "/",
   },
   {
-    title: "State Components",
+    title: "Contacto",
     icon: '',
     route: "/contact",
-  },
-  {
-    title: "Bootstrap Components",
-    icon: '',
-    route: "/",
-  },,
-  {
-    title: "Routes Components",
-    icon: '',
-    route: "/contact",
-  },
+  }
 ];

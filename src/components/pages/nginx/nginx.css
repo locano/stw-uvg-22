@@ -1,0 +1,45 @@
+.body-nginx {
+  text-align: center;
+  width: 100%;
+  height: 100%;
+  margin: 0 auto;
+  font-family: Tahoma, Verdana, Arial, sans-serif;
+  background-image: url("https://images.squarespace-cdn.com/content/v1/546406e3e4b024e8934b93cb/1420265853622-VJON1X53JR2WQN6PQBUY/ke17ZwdGBToddI8pDm48kFTEgwhRQcX9r3XtU0e50sUUqsxRUqqbr1mOJYKfIPR7LoDQ9mXPOjoJoqy81S2I8N_N4V1vUb5AoIIIbLZhVYxCRW4BPu10St3TBAUQYVKcjVvFZn3_1TpSINbj1p15LLAjcj6UHNkQOuDz3gO52lBvccB2t33iJEaqs_Hdgp_g/background.png?format=1500w");
+}
+.title-nginx{
+  display: inline-flex
+}
+.nginx {
+  font-size: 120px;
+  color: white;
+  animation-name: nginx-frame;
+  animation-duration: 4s;
+  animation-play-state: initial;
+}
+.ref-link{
+  color: yellow;
+}
+.nginx-icon {
+  padding-top: 5rem;
+  animation-name: nginx-frame-icon;
+  animation-duration: 10s;
+}
+.nginx-description {
+  color: white;
+}
+@keyframes nginx-frame {
+  0% {
+    font-size: 72px;
+  }
+  100% {
+    font-size: 120px;
+  }
+}
+@keyframes nginx-frame-icon {
+  0% {
+    height: 72px;
+  }
+  100% {
+    height: 120px;
+  }
+}

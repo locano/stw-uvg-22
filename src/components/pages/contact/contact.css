@@ -1,0 +1,28 @@
+.profile-align{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+    flex-direction: column;
+}
+.profile-pic{
+    height: 350px;
+    width: 350px;
+    background-color: white;
+    background-image: url('/src/assets/img/lud.jpg');
+    background-size: cover;
+    border-radius: 50%;
+    cursor: pointer;
+}
+.profile-card{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 2rem;
+    flex-direction: column;
+    background-color: white;
+    box-shadow: 3px 3px #888888;
+    width: 600px;
+    height: 600px;
+
+}
