@@ -4,7 +4,7 @@ import "./sideBar.css";
 import { sideBarElements } from "./sideBarElements";
 import { AiOutlineMenu,AiFillCaretRight } from "react-icons/ai";
 function SideBar() {
-  const [toggle, setToggle] = useState(true);
+  const [toggle, setToggle] = useState(false);
 
   return (
     <div className={toggle ? "side-bar" : "side-bar-min"}>

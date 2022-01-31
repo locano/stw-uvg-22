@@ -11,14 +11,16 @@
   animation-name: nginx-frame-title;
   animation-duration: 5s;
   animation-play-state:initial;
-  animation-iteration-count: infinite;
+  animation-iteration-count:initial;
+  animation-fill-mode: forwards;
   text-shadow: 3px 4px black;
 }
 .nginx-icon {
   height: 100px;
   animation-name: nginx-frame-icon;
   animation-duration: 5s;
-  animation-iteration-count: infinite;
+  animation-iteration-count: initial;
+  animation-fill-mode: forwards;
   animation-direction: alternate-reverse;
 }
 .ref-link {

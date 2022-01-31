@@ -1,0 +1,264 @@
+.container-eyes {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  width: calc(100vw - 50px);
+  height: 100%;
+  gap: 150px;
+  background-color: black;
+}
+.eye {
+  top: 100px;
+  width: 40%;
+  height: 35%;
+  background-color: white;
+  border-radius: 100% 0% 65% 0%;
+  box-shadow: 100px 0px 0px 0px whitesmoke inset;
+  animation: animation2 8s ease-in-out infinite;
+  position: relative;
+  overflow: hidden;
+}
+
+.eye-left {
+  transform: rotateY(180deg);
+  /* right: 25%; */
+}
+
+.sharingan {
+  background-color: red;
+  width: 150px;
+  height: 150px;
+  border: 1px solid black;
+  border-radius: 50%;
+  position: absolute;
+  top: 30%;
+  left: 30%;
+  animation: animationSharingan 4s infinite linear;
+}
+
+.middle-circle {
+  width: 70%;
+  height: 70%;
+  border: 1px solid black;
+  border-radius: 50%;
+  top: 50%;
+  left: 50%;
+  position: absolute;
+  transform: translate(-50%, -50%);
+}
+
+.inner-circle {
+  width: 20%;
+  height: 20%;
+  background-color: black;
+  border-radius: 50%;
+  top: 10%;
+  position: absolute;
+}
+
+.triangle {
+  height: 70%;
+  width: 50%;
+  background-color: black;
+  top: -7px;
+  left: 6px;
+  position: relative;
+  border-radius: 0% 145% 0% 90%;
+  transform: rotateZ(70deg);
+}
+
+.circle1 {
+  left: 90%;
+  top: 35%;
+  transform: rotate(90deg);
+  animation: animation1 4s 4s forwards;
+  opacity: 0;
+}
+
+.circle2 {
+  top: 90%;
+  left: 30%;
+  transform: rotate(-180deg);
+  animation: animation1 4s 12s forwards;
+  opacity: 0;
+}
+
+.circle3 {
+  transform: rotate(-45deg);
+}
+
+.middle-circle2 {
+  width: 40%;
+  height: 40%;
+  background-color: black;
+  border-radius: 50%;
+  top: 50%;
+  left: 50%;
+  position: absolute;
+  transform: translate(-50%, -50%);
+}
+
+@keyframes animationSharingan {
+  0% {
+    transform: rotate(-360deg);
+  }
+}
+
+@keyframes animation1 {
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes animation2 {
+  0%,
+  35%,
+  55%,
+  100% {
+    height: 35%;
+  }
+  45%,
+  50% {
+    height: 0px;
+  }
+}
+
+/* Extra small devices (phones, 600px and down) */
+@media only screen and (max-width: 600px) {
+  .container-eyes {
+    gap: 50px;
+  }
+  .eye {
+    width: 30%;
+    height: 10%;
+  }
+  .sharingan {
+    width: 50px;
+    height: 50px;
+  }
+
+  @keyframes animation2 {
+    0%,
+    35%,
+    55%,
+    100% {
+      height: 10%;
+    }
+    45%,
+    50% {
+      height: 0px;
+    }
+  }
+}
+
+/* Small devices (portrait tablets and large phones, 600px and up) */
+@media only screen and (min-width: 600px) {
+  .container-eyes {
+    gap: 75px;
+  }
+  .eye {
+    width: 40%;
+    height: 25%;
+  }
+  .sharingan {
+    width: 100px;
+    height: 100px;
+  }
+
+  @keyframes animation2 {
+    0%,
+    35%,
+    55%,
+    100% {
+      height: 25%;
+    }
+    45%,
+    50% {
+      height: 0px;
+    }
+  }
+}
+
+/* Medium devices (landscape tablets, 768px and up) */
+@media only screen and (min-width: 768px) {
+  .container-eyes {
+    gap: 100px;
+  }
+  .eye {
+    width: 40%;
+    height: 30%;
+  }
+  .sharingan {
+    width: 125px;
+    height: 125px;
+  }
+
+  @keyframes animation2 {
+    0%,
+    35%,
+    55%,
+    100% {
+      height: 30%;
+    }
+    45%,
+    50% {
+      height: 0px;
+    }
+  }
+}
+
+/* Large devices (laptops/desktops, 992px and up) */
+@media only screen and (min-width: 992px) {
+  .container-eyes {
+    gap: 150px;
+  }
+  .eye {
+    width: 40%;
+    height: 30%;
+  }
+  .sharingan {
+    width: 125px;
+    height: 125px;
+  }
+
+  @keyframes animation2 {
+    0%,
+    35%,
+    55%,
+    100% {
+      height: 30%;
+    }
+    45%,
+    50% {
+      height: 0px;
+    }
+  }
+}
+
+/* Extra large devices (large laptops and desktops, 1200px and up) */
+@media only screen and (min-width: 1200px) {
+  .container-eyes {
+    gap: 150px;
+  }
+  .eye {
+    width: 40%;
+    height: 35%;
+  }
+  .sharingan {
+    width: 175px;
+    height: 175px;
+  }
+
+  @keyframes animation2 {
+    0%,
+    35%,
+    55%,
+    100% {
+      height: 40%;
+    }
+    45%,
+    50% {
+      height: 0px;
+    }
+  }
+}

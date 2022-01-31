@@ -1,6 +1,6 @@
 .side-bar {
   height: 100%;
-  width: 260px;
+  width: 200px;
   background-color: #14274e;
   display: flex;
   flex-direction: row;
@@ -41,7 +41,7 @@
   background-size: cover;
   border-radius: 50%;
   cursor: pointer;
-  margin-left: 1rem;
+  margin: 1rem;
 }
 .side-bar-list {
   padding: 0;

@@ -1,0 +1,346 @@
+:root {
+    --red: #ff4b51;
+    --red-shadow: rgb(215, 58, 64);
+    --red-light:rgb(255,93,99);
+    --aqua: #00c7ea;
+    --aqua-shadow: rgb(0, 159, 189);
+    --aqua-light: rgb(0, 211, 239);
+    --screen-black: #131313;
+    --screen-gray: #303030;
+    --plastic-gray: #4c4c4c;
+    --screen-light-reflection: rgb(45,45,45);
+    --glass-light-reflection: rgb(70,70,70);
+}
+
+* {
+    /*position: absolute;*/
+}
+/*
+cuerpo:
+420x250
+
+vidrio:
+395x235
+radio 11
+pantalla:
+344x200
+
+ */
+
+body {
+    margin: 0;
+    padding: 0;
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+/*
+  ================ CUERPO DE LA SWITCH ==================
+*/
+
+#nintendo-switch {
+    position: relative;
+    background-image: linear-gradient(90deg, var(--red) 50%, var(--aqua) 50%);
+    width: 100%;
+    height: 100%;
+}
+
+#switch-body {
+    position: relative;
+    width: 420px;
+    height: 250px;
+    background: var(--plastic-gray);
+}
+
+#switch-glass {
+    position: relative;
+    width: 94%;
+    height: 94%;
+    border-radius: 6%;
+    background-image: linear-gradient(135deg,
+        var(--screen-gray) 19.8%,
+        var(--glass-light-reflection) 19.8%,
+        var(--glass-light-reflection) 32.7%,
+        var(--screen-gray) 32.7%,
+        var(--screen-gray) 41.3%,
+        var(--glass-light-reflection) 41.3%,
+        var(--glass-light-reflection) 58.6%,
+        var(--screen-gray) 58.6%,
+        var(--screen-gray)
+    );
+
+    border: 2px solid #212121;
+
+}
+
+#switch-screen {
+    background: linear-gradient(135deg,
+        var(--screen-black) 15%,
+        var(--screen-light-reflection) 15%,
+        var(--screen-light-reflection) 30%,
+        var(--screen-black) 30%,
+        var(--screen-black) 40%,
+        var(--screen-light-reflection) 40%,
+        var(--screen-light-reflection) 60%,
+        var(--screen-black) 60%,
+        var(--screen-black)
+    );
+            /*var(--screen-black);*/
+    width: 87%;
+    height: 85%;
+}
+
+#nintendo-switch, #switch-body, #switch-glass {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+/*
+    ==================== JOYCON DERECHO (AQUA) ===========
+ */
+
+#aqua-joycon{
+    position: relative;
+    background: var(--aqua);
+    width: 90px;
+    height: 238px;
+    flex-shrink: 0;
+    flex-grow: 0;
+    border-radius: 43px 0 0 43px;
+    box-shadow: 0 6px var(--aqua-shadow),
+                0 -6px var(--aqua-light),
+                0 -10px var(--plastic-gray);
+}
+
+#aqua-joystick {
+    position: absolute;
+    top: 33px;
+    left: 21px;
+}
+
+#minus {
+    position: absolute;
+    background: var(--screen-gray);
+    width: 15px;
+    height: 5px;
+    top: 15px;
+    right: 10px;
+    box-shadow: 0 1px var(--aqua-shadow);
+}
+
+#aqua-button-diamond {
+    position: absolute;
+    top: 100px;
+    right: 14px;
+}
+
+#hole-aqua {
+    position: absolute;
+    background: var(--aqua);
+    top: 0;
+    right: 0;
+    width: 12px;
+    height: 12px;
+    border-radius: 0 0 0 100%;
+}
+
+#left-screen-gap {
+    position: absolute;
+    bottom: 0;
+    left: 25px;
+}
+
+#top-buttons {
+    position: absolute;
+    width: 37px;
+    height: 4px;
+    top: -4px;
+    left: 50px;
+    background: var(--screen-black);
+}
+
+#capture-button {
+    position: absolute;
+    height: 14px;
+    width: 14px;
+    background: var(--plastic-gray);
+    bottom: 56px;
+    right: 27px;
+    text-align: center;
+    vertical-align: middle;
+    line-height: 14px;
+    font-size: 23px;
+}
+
+div#capture-button::before {
+    content: "○";
+}
+
+/*
+    ==================== JOYCON IZQUIERDO (ROJO) ==============
+ */
+
+#red-joycon{
+    position: relative;
+    background: var(--red);
+    width: 90px;
+    height: 238px;
+    flex-shrink: 0;
+    flex-grow: 0;
+    border-radius: 0 43px 43px 0;
+    -webkit-box-shadow: 0 6px var(--red-shadow),
+                        0 -6px var(--red-light),
+                        0 -10px var(--plastic-gray);
+
+}
+
+#red-joystick{
+    position: absolute;
+    top: 105px;
+    left: 21px;
+}
+
+.plus {
+    position: absolute;
+    background: var(--screen-gray);
+    width: 15px;
+    height: 5px;
+    top: 15px;
+    left: 10px;
+    box-shadow: 0 1px var(--red-shadow);
+}
+.plus + .plus {
+    width: 5px;
+    height: 15px;
+    top: 10px;
+    left: 15px;
+}
+
+#right-screen-gap {
+    position: absolute;
+    bottom: 0;
+    right: 25px;
+}
+
+#hole-red {
+    position: absolute;
+    background: var(--red);
+    top: 0;
+    left: 0;
+    width: 12px;
+    height: 12px;
+    border-radius: 0 0 100% 0;
+}
+
+#home-button{
+    position: absolute;
+    bottom: 50px;
+    left: 20px;
+}
+div#home-button::after {
+    content: "★";
+}
+
+#red-button-diamond {
+    position: absolute;
+    top: 20px;
+    left: 16px;
+}
+
+/*
+    ================  SOMBRAS Y PARTES EXTERNAS ================
+ */
+
+#switch-shadow {
+    position: absolute;
+    width: 60%;
+    max-width: 512px;
+    height: 20px;
+    bottom: 15%;
+    background-image: linear-gradient(90deg, var(--red-shadow) 50%, var(--aqua-shadow) 50%);
+    border-radius: 50%;
+}
+
+/*
+    ================ TEMPLATE DE COSAS QUE APARECEN MUCHO ======
+ */
+
+.screen-gap {
+    height: 4px;
+    width: 20px;
+    background: var(--screen-black);
+    border-radius: 100% 100% 0 0;
+}
+
+.button {
+    width: 20px;
+    height: 17px;
+    box-shadow: 0 3px var(--shadow-color), 0 -3px var(--plastic-gray);
+    text-align: center;
+    vertical-align: middle;
+    line-height: 16px;
+    font-size: 14px;
+}
+
+.button-diamond {
+    width: 60px;
+    height: 60px;
+    padding: 0;
+}
+.button-diamond .button:first-child {
+    position: absolute;
+    top: 0;
+    left: 20px;
+}
+.button-diamond .button:nth-child(2) {
+    position: absolute;
+    top: 20px;
+    left: 0;
+}
+.button-diamond .button:nth-child(3) {
+    position: absolute;
+    top: 20px;
+    right: 0;
+}
+.button-diamond .button:last-child {
+    position: absolute;
+    bottom: 0;
+    right: 20px;
+}
+
+.controls {
+    background: var(--screen-gray);
+    border-radius: 50%;
+}
+
+.joystick{
+    width: 45px;
+    height: 42px;
+    box-shadow: 0 10px var(--shadow-color), 0 -3px var(--plastic-gray);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.joystick-ring {
+    width: 32px;
+    height: 32px;
+    border: 1.5px solid var(--screen-black);
+}
+
+div#red-button-diamond > .button {
+    color: rgb(173,173,173);
+    font-family: sans-serif;
+    line-height: 13px;
+}
+
+div#aqua-joycon > div.joystick, div#aqua-joycon > div.button, div#aqua-joycon * div.button {
+    --shadow-color: var(--aqua-shadow);
+}
+
+div#red-joycon > div.joystick, div#red-joycon > div.button, div#red-joycon * div.button {
+    --shadow-color: var(--red-shadow);
+}
