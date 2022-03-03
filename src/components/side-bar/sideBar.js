@@ -3,6 +3,7 @@ import { Link } from "react-router-dom";
 import "./sideBar.css";
 import { sideBarElements } from "./sideBarElements";
 import { AiOutlineMenu,AiFillCaretRight } from "react-icons/ai";
+import logo from '../../assets/images/logo.jpg'
 function SideBar() {
   const [toggle, setToggle] = useState(false);
 
@@ -14,7 +15,7 @@ function SideBar() {
             <AiOutlineMenu onClick={() => setToggle(false)} className="side-bar-action-icon" />
           </div>
           <a href="https://www.uvg.edu.gt/">
-            <div className="side-bar-logo"></div>
+            <img className="side-bar-logo" src={logo}></img>
           </a>
           <ul className="side-bar-list">
             {sideBarElements.map((element, index) => {

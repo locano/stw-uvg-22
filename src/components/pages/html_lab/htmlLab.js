@@ -1,5 +1,6 @@
 import React from "react";
 import { Link } from "react-router-dom";
+import img1 from '../../../assets/images/img1.jpg';
 
 function HTMLLab() {
   return (
@@ -26,7 +27,7 @@ function HTMLLab() {
       </header>
 
       <img
-        src="./assets/images/img1.jpg"
+        src={img1}
         alt="Imagen de serie"
         width="300"
         height="200"

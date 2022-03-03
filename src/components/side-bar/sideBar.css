@@ -36,7 +36,6 @@
 .side-bar-content .side-bar-logo {
   height: 175px;
   width: 175px;
-  background-image: url("/src/assets/img/logo.jpg");
   background-position: center;
   background-size: cover;
   border-radius: 50%;

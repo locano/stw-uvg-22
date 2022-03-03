@@ -33,7 +33,9 @@ module.exports = {
         test: /\.js$/,
         loader: "babel-loader",
         exclude: /(node_modules)/,
-        preset: ["@babel/preset-env", "@babel/preset-react"],
+        options: {
+          presets: ["@babel/preset-env", "@babel/preset-react"],
+        }
       },
       {
         test: /\.(png|jpe?g|gif)$/i,

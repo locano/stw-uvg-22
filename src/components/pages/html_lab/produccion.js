@@ -1,5 +1,6 @@
 import React from "react";
 import { Link } from "react-router-dom";
+import production from '../../../assets/images/produccion.jpeg';
 function Produccion() {
   return (
     <>
@@ -26,7 +27,7 @@ function Produccion() {
 
       <main>
         <img
-          src="./assets/images/produccion.jpeg"
+          src={production}
           alt="produccion"
           width="400"
           height="200"
