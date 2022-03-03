@@ -29,6 +29,11 @@ export const sideBarElements = [
     route: "/css-lab2",
   },
   {
+    title: "JS Chat",
+    icon: <FcSmartphoneTablet />,
+    route: "/js-chat",
+  },
+  {
     title: "Contacto",
     icon: <FcContacts />,
     route: "/contact",

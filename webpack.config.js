@@ -35,13 +35,21 @@ module.exports = {
         exclude: /(node_modules)/,
         options: {
           presets: ["@babel/preset-env", "@babel/preset-react"],
-        }
+          plugins: [
+            [
+              "@babel/plugin-transform-runtime",
+              {
+                regenerator: true,
+              },
+            ],
+          ],
+        },
       },
       {
         test: /\.(png|jpe?g|gif)$/i,
-        loader: 'file-loader',
+        loader: "file-loader",
         options: {
-          outputPath: 'images',
+          outputPath: "images",
         },
       },
     ],

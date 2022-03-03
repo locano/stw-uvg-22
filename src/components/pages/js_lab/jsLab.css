@@ -1,0 +1,15 @@
+:root {
+  --lightPrimaryColor: #c5cae9;
+  --accentColor: #607d8b;
+}
+
+#chat-body {
+  background-image: linear-gradient(
+    to bottom right,
+    var(--lightPrimaryColor),
+    var(--accentColor)
+  );
+  padding: 16px;
+  height: 100%;
+  width: 100%;
+}
