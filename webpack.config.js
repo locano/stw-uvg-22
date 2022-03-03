@@ -21,12 +21,22 @@ module.exports = {
   module: {
     rules: [
       {
+        test: /\.scss$/i,
+        use: [
+          // Creates `style` nodes from JS strings
+          // Translates CSS into CommonJS
+          MiniCssExtractPlugin.loader,//3. Inject styles into a new file
+          "css-loader", //2. Turns css into commonjs
+          "sass-loader", //1. Turns sass into css
+        ],
+      },
+      {
         test: /\.css$/i,
         use: [
           // Creates `style` nodes from JS strings
-          MiniCssExtractPlugin.loader,
           // Translates CSS into CommonJS
-          "css-loader",
+          MiniCssExtractPlugin.loader,//3. Inject styles into a new file
+          "css-loader", //2. Turns css into commonjs
         ],
       },
       {
