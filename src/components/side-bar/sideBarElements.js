@@ -1,7 +1,7 @@
 // Contains an array of elements to create routes
 import React from "react";
 import { AiOutlineMonitor } from "react-icons/ai";
-import { FcContacts, FcHome, FcImageFile, FcServices, FcSmartphoneTablet } from "react-icons/fc";
+import { FcContacts, FcHome, FcImageFile, FcMindMap, FcServices, FcSmartphoneTablet } from "react-icons/fc";
 export const sideBarElements = [
   {
     title: "Home",
@@ -32,6 +32,11 @@ export const sideBarElements = [
     title: "JS Chat",
     icon: <FcSmartphoneTablet />,
     route: "/js-chat",
+  },
+  {
+    title: "Webpack",
+    icon: <FcMindMap />,
+    route: "/webpack",
   },
   {
     title: "Contacto",

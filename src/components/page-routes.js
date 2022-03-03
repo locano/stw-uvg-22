@@ -4,6 +4,7 @@ import Contact from "./pages/contact/contact";
 import CSSLab from "./pages/css_lab/cssLab";
 import CSSLab2 from "./pages/css_lab/cssLab2";
 import JSLab from "./pages/js_lab/jsLab";
+import WebpackLab from "./pages/webpack_lab/webpack_lab";
 import HTMLLab from "./pages/html_lab/htmlLab";
 import Lanzamiento from "./pages/html_lab/lanzamiento";
 import Produccion from "./pages/html_lab/produccion";
@@ -31,6 +32,7 @@ function PageRoutes() {
           <Route path="/css-lab" element={<CSSLab />}></Route>
           <Route path="/css-lab2" element={<CSSLab2 />}></Route>
           <Route path="/js-chat" element={<JSLab />}></Route>
+          <Route path="/webpack" element={<WebpackLab />}></Route>
           <Route path="/contact" element={<Contact />}></Route>
         </Routes>
       </div>
